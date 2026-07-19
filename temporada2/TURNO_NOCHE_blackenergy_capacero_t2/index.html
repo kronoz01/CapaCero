@@ -1,0 +1,1349 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Historias operativas de malware real.">
+      
+      
+      
+      
+        <link rel="prev" href="../CAM-D04_mirai_capacero_t2/">
+      
+      
+        <link rel="next" href="../MEMORANDO_solarwinds_capacero_t2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>EP9: BlackEnergy - CAPA CERO</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CAPA CERO" class="md-header__button md-logo" aria-label="CAPA CERO" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CAPA CERO
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EP9: BlackEnergy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Principal
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tecnico/inicio/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Acceso Técnico
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../educativo/inicio/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Acceso Educativo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../general/inicio/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Acceso General
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../temporada1/prologo/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Temporada 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../PROLOGO_capacero_t2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Temporada 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../apendices/referencias%20cruzadas%20y%20tabla%20de%20preguntas/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Base de Conocimientos
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CAPA CERO" class="md-nav__button md-logo" aria-label="CAPA CERO" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CAPA CERO
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Principal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tecnico/inicio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acceso Técnico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../educativo/inicio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acceso Educativo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/inicio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acceso General
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Temporada 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Temporada 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temporada1/prologo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prólogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temporada1/EP1_pegasus_capacero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP1: Pegasus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temporada1/EP2_candiru_capacero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP2: Candiru
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temporada1/EP3_lojax_capacero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP3: LoJax
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temporada1/EP4_flame_capacero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP4: Flame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temporada1/EP5_eternalblue_capacero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP5: EternalBlue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temporada1/EP6_stuxnet_capacero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP6: Stuxnet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../temporada1/EP7_triton_capacero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP7: Triton
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Temporada 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Temporada 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PROLOGO_capacero_t2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prólogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CAM-D04_mirai_capacero_t2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP8: Mirai
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP9: BlackEnergy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MEMORANDO_solarwinds_capacero_t2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP10: SolarWinds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HILO_CORREOS_emotet_capacero_t2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EP11: Emotet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apendices/referencias%20cruzadas%20y%20tabla%20de%20preguntas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de Conocimientos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>EP9: BlackEnergy</h1>
+
+<p>📁 ARCHIVO: TURNO_NOCHE_V.KOVALENKO
+estado: cerrado
+clasificación: reporte interno
+fecha: diciembre 2016
+observaciones: sin anomalías reportadas</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>Vasyl llegó a las veintidós.
+Como siempre.
+Termo en mano.
+El café ya frío para cuando lo necesitara.</p>
+<p>Saludó al que salía.
+Dos palabras.
+Ninguna importante.
+La puerta se cerró.</p>
+<p>Vasyl solo.
+El edificio solo.
+El zumbido constante de las máquinas
+que llevan años diciéndole
+que todo está bien.</p>
+<p>Se sentó.
+Abrió el termo.
+Miró por la ventana.</p>
+<p>Afuera — nieve.
+No cayendo.
+Ya caída.
+El tipo de frío que no avisa.
+Que solo está.</p>
+<pre><code>                [22:01:14] reconnaissance: complete
+                [22:01:14] target systems: mapped
+                [22:01:15] operators: 1 detected
+                [22:01:15] access level: none
+                [22:01:15] threat to operation: minimal
+</code></pre>
+<p>———</p>
+<p>Vasyl conocía cada sonido de ese lugar.</p>
+<p>El transformador principal —
+grave, constante, casi orgánico.
+Como respiración.</p>
+<p>Los paneles secundarios —
+un zumbido más agudo.
+Siempre igual.
+Siempre ahí.</p>
+<p>El sistema de ventilación —
+cada cuarenta minutos exactos
+un clic antes de encenderse.</p>
+<p>Vasyl no sabía cómo funcionaban las máquinas.
+No era su trabajo.
+Su trabajo era notar cuando algo cambiaba.</p>
+<p>Esa noche
+nada cambiaba.</p>
+<pre><code>                [22:44:33] lateral movement: initiated
+                [22:44:34] credentials: obtained
+                [22:44:35] systems: accessible
+                [22:44:35] waiting...
+</code></pre>
+<p>———</p>
+<p>A la medianoche Vasyl caminó el perímetro.
+Lo hacía siempre.
+No porque lo exigieran.
+Porque el edificio se sentía diferente de noche
+y caminar era la única forma de confirmarlo.</p>
+<p>Todo en orden.
+Las puertas cerradas.
+Los paneles encendidos.
+Las luces verdes donde debían estar.</p>
+<p>Volvió a su silla.
+Se sirvió café.</p>
+<p>Por la ventana vio las luces de la ciudad.
+Miles de ventanas encendidas.
+Gente despierta todavía.
+O gente durmiendo con las luces puestas.</p>
+<p>No pensó nada particular sobre ellas.
+Solo las vio.
+Como siempre.</p>
+<pre><code>                [00:03:21] command received
+                [00:03:21] execution: scheduled
+                [00:03:22] systems: ready
+                [00:03:22] waiting for signal...
+</code></pre>
+<p>———</p>
+<p>01:00.</p>
+<p>Vasyl lo escuchó antes de verlo.</p>
+<p>No fue un sonido nuevo.
+Fue la ausencia de uno viejo.</p>
+<p>El transformador principal
+dejó de respirar
+por un segundo.</p>
+<p>Solo un segundo.
+Luego volvió.</p>
+<p>Vasyl se incorporó.
+Miró los paneles.
+Todo verde.
+Todo normal.</p>
+<p>Se quedó quieto.
+Esperando otro segundo así.</p>
+<p>No llegó.</p>
+<pre><code>                [01:00:00] signal received
+                [01:00:01] initiating sequence...
+                [01:00:02] breaker 1: open
+                [01:00:03] breaker 2: open
+                [01:00:04] breaker 3: open
+</code></pre>
+<p>———</p>
+<p>Las luces de la ciudad desaparecieron.</p>
+<p>No todas.
+Un sector entero.
+Como si alguien hubiera borrado
+una parte del mapa.</p>
+<p>Vasyl se levantó.
+Fue a la ventana.
+Miró.</p>
+<p>Oscuridad donde antes había luz.
+El tipo de oscuridad que no debería existir
+en el centro de una ciudad.</p>
+<pre><code>                [01:00:05] breaker 4: open
+                [01:00:06] breaker 5: open
+                [01:00:07] breaker 6: open
+                [01:00:08] sector A: offline
+                [01:00:08] sector B: offline
+                [01:00:09] sector C: offline
+</code></pre>
+<p>———</p>
+<p>Vasyl llamó al supervisor.</p>
+<p>Cuatro timbres.
+Cinco.</p>
+<p>—"¿Sí?"
+Voz de alguien que dormía.</p>
+<p>—"Las luces. Un sector grande.
+Desde aquí se ve."</p>
+<p>Silencio.</p>
+<p>—"¿Los paneles?"</p>
+<p>Vasyl miró.</p>
+<p>—"Todo verde."</p>
+<p>Otro silencio.</p>
+<p>—"Espera. Voy a llamar a sistemas."</p>
+<p>La línea quedó activa.
+Vasyl escuchó respiración.
+Movimiento.
+Otra llamada de fondo.</p>
+<p>Afuera la oscuridad no se movía.</p>
+<pre><code>                [01:03:47] remote access: active
+                [01:03:48] operator controls: overridden
+                [01:03:49] manual intervention: disabled
+                [01:03:49] systems responding to: external
+</code></pre>
+<p>———</p>
+<p>Vasyl no entendía lo que miraba.</p>
+<p>Los paneles seguían en verde.
+Los indicadores seguían estables.
+Los números seguían dentro de rango.</p>
+<p>Pero afuera
+la ciudad seguía oscura.</p>
+<p>Como si el edificio
+y la realidad
+hubieran dejado de hablar
+el mismo idioma.</p>
+<pre><code>                [01:11:02] killDisk: deployed
+                [01:11:03] overwriting system files...
+                [01:11:04] overwriting system files...
+                [01:11:05] recovery: disabled
+</code></pre>
+<p>———</p>
+<p>Los ingenieros llegaron cuarenta minutos después.</p>
+<p>Vasyl les abrió la puerta.
+Les sirvió café que ya nadie quería.
+Los vio caminar rápido hacia los paneles.
+Los escuchó hablar en un idioma técnico
+que reconocía como idioma
+pero no como palabras.</p>
+<p>Se hizo a un lado.
+Su trabajo ya había terminado.</p>
+<p>O eso pensó.</p>
+<pre><code>                [01:14:09] log deletion: complete
+                [01:14:09] traces: minimal
+                [01:14:10] operation: complete
+                [01:14:10] disconnect...
+</code></pre>
+<p>———</p>
+<p>A las tres de la mañana
+un ingeniero le puso un papel enfrente.</p>
+<p>Reporte de turno.
+Campos en blanco.
+Una línea para observaciones.</p>
+<p>Vasyl lo miró.</p>
+<p>—"¿Qué escribo?"</p>
+<p>El ingeniero no lo miró.</p>
+<p>—"Lo que viste."</p>
+<p>Vasyl pensó un momento.</p>
+<p>Escribió:
+<em>Sin anomalías hasta las 01:00.
+Corte de luz visible desde ventana norte.
+Paneles sin alertas durante todo el turno.
+Se notificó a supervisor.</em></p>
+<p>El ingeniero tomó el papel.
+Lo firmó él también.
+Se fue.</p>
+<p>Vasyl se quedó solo otra vez.</p>
+<pre><code>                [03:14:00] report filed
+                [03:14:00] incident classification: technical failure
+                [03:14:01] cause: under investigation
+                [03:14:01] operator error: none detected
+                [03:14:02] external access: [REDACTED]
+</code></pre>
+<p>———</p>
+<p>Afuera empezaba a aclarar.</p>
+<p>Vasyl recogió el termo vacío.
+Se puso el abrigo.
+Salió.</p>
+<p>El frío entró inmediato.
+El tipo que no avisa.
+Que solo está.</p>
+<p>Caminó hacia la parada.
+Pasó por el sector que había estado oscuro.</p>
+<p>Las luces ya volvían.
+Ventana por ventana.
+Bloque por bloque.</p>
+<p>Vasyl las miró.</p>
+<p>No pensó en lo que había pasado.
+No tenía las palabras para pensarlo.</p>
+<p>Solo pensó que hacía mucho frío
+y que el próximo turno era en dos días
+y que tenía que comprar café
+porque el termo ya no servía de nada.</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>[NOTA DEL ARCHIVO]</p>
+<p>El reporte de Vasyl Kovalenko
+fue archivado como documentación de rutina.</p>
+<p>Nadie lo volvió a leer.</p>
+<p>225.000 personas estuvieron sin electricidad
+esa noche.
+Entre una y seis horas
+dependiendo del sector.</p>
+<p>La temperatura exterior
+era de menos catorce grados.</p>
+<p>El reporte oficial clasificó el evento
+como fallo técnico bajo investigación.</p>
+<p>Vasyl no supo nunca
+que esa noche
+había estado en el centro de algo.</p>
+<p>Que lo que vio por la ventana
+no fue un fallo.</p>
+<p>Que los paneles en verde
+mentían.</p>
+<p>Que alguien a miles de kilómetros
+había apagado esas luces
+con la misma precisión
+con la que él
+cerraba una puerta.</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>[03:14:00] report filed
+[03:14:01] vasyl.kovalenko: uninformed
+[03:14:01] threat actor: unattributed
+[03:14:02] systems restored: partial
+[03:14:02] next operation: scheduled
+[03:14:02] target: [REDACTED]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
