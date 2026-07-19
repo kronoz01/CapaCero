@@ -1,5 +1,9 @@
-{% if page.meta and page.meta.comments == false %}
-  {% else %}
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+  <!-- Inyección del Buzón de Giscus -->
   <br>
   <h2 id="__comments">Buzón de Operadores / Libro de Visitas</h2>
   <script src="https://giscus.app/client.js"
@@ -17,4 +21,4 @@
           crossorigin="anonymous"
           async>
   </script>
-{% endif %}
+{% endblock %}
