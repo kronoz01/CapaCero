@@ -1,0 +1,33 @@
+site_name: CAPA CERO
+site_description: Historias operativas de malware real.
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: green
+  features:
+    - navigation.tabs
+    - navigation.indexes
+
+nav:
+  - Principal: index.md
+  - Acceso Técnico: tecnico/inicio.md
+  - Acceso Educativo: educativo/inicio.md
+  - Acceso General: general/inicio.md
+  - Temporada 1:
+      - Prólogo: temporada1/prologo.md
+      - 'EP1: Pegasus': temporada1/EP1_pegasus_capacero.md
+      - 'EP2: Candiru': temporada1/EP2_candiru_capacero.md
+      - 'EP3: LoJax': temporada1/EP3_lojax_capacero.md
+      - 'EP4: Flame': temporada1/EP4_flame_capacero.md
+      - 'EP5: EternalBlue': temporada1/EP5_eternalblue_capacero.md
+      - 'EP6: Stuxnet': temporada1/EP6_stuxnet_capacero.md
+      - 'EP7: Triton': temporada1/EP7_triton_capacero.md
+  - Temporada 2:
+      - Prólogo: temporada2/PROLOGO_capacero_t2.md
+      - 'EP8: Mirai': temporada2/CAM-D04_mirai_capacero_t2.md
+      - 'EP9: BlackEnergy': temporada2/TURNO_NOCHE_blackenergy_capacero_t2.md
+      - 'EP10: SolarWinds': temporada2/MEMORANDO_solarwinds_capacero_t2.md
+      - 'EP11: Emotet': temporada2/HILO_CORREOS_emotet_capacero_t2.md
+  - Base de Conocimientos: apendices/referencias cruzadas y tabla de preguntas.md

@@ -1,0 +1,5 @@
+🖥️ Para el núcleo técnico (Sysadmins, arquitectos, SOC/OT analysts, DevSecOps, threat intel, equipos de respuesta)
+Tagline: No es un manual. Es un post-mortem narrativo de lo que los logs no muestran.
+Descripción:
+Capa Cero no explica exploits ni lista IOCs. Traduce comportamientos documentados de malware y campañas reales (zero-click móvil, persistencia en firmware, spoofing SCADA, compromiso de cadena de suministro, phishing contextual) en experiencias operativas humanas. Cada episodio usa una estructura dual —telemetría vs. percepción— para mostrar cómo la certeza se erosiona cuando los paneles siguen en verde pero la realidad ya cambió. Escrito desde la perspectiva de quien administra, audita o responde, el libro captura la fatiga del operador, la ilusión del cumplimiento, el costo de la deuda técnica y la resiliencia como práctica de verificación cruzada. Si alguna vez has mirado un log limpio mientras sabías que algo no encajaba, Capa Cero habla tu idioma. No te dice cómo parchear. Te recuerda por qué nunca basta.
+
