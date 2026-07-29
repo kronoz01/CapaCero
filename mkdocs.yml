@@ -33,7 +33,8 @@ nav:
       - 'EP11: Emotet': temporada2/HILO_CORREOS_emotet_capacero_t2.md
   - Epílogo: epilogo.md
   - Base de Conocimientos: apendices/Preguntas de discusión.md
-  plugins:
+
+plugins:
   - search
   - rss:
       match_path: '.*'
