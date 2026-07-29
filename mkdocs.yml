@@ -1,5 +1,7 @@
 site_name: CAPA CERO
 site_description: Historias operativas de malware real.
+site_url: https://kronoz01.github.io/CapaCero/
+
 theme:
   name: material
   custom_dir: overrides
@@ -38,5 +40,3 @@ plugins:
   - search
   - rss:
       match_path: '.*'
-      date_from_meta:
-        as_creation: true
