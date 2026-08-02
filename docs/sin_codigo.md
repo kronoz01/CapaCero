@@ -1,402 +1,404 @@
-📁 SIN CÓDIGO
+# Sin Código
 
-estado: sin clasificar
-temporada: —
-familia de malware: —
-IOC confirmados: —
+📁 SIN CÓDIGO  
+  
+estado: sin clasificar  
+temporada: —  
+familia de malware: —  
+IOC confirmados: —  
 
-[SISTEMA — externo al host]
+[SISTEMA — externo al host]  
 
-[03:14:00] target: observed
-[03:14:00] entry: pending
-[03:14:01] awaiting input...
-
-———
-
-Dave lleva cuatro noches sin dormir.
-
-No por el turno.
-
-Hay una taza limpia
-que sigue dejando
-del mismo lado del fregadero.
-
-La lava.
-
-La seca.
-
-La vuelve a dejar ahí.
-
-Cada mañana
-olvida por qué sigue haciéndolo.
-
-Los ojos le pican.
-
-El café ya no hace nada.
-
-Lleva dos horas
-releyendo la misma línea de log
-sin que las palabras
-decidan quedarse.
-
-no es nada.
-
-es el cansancio.
-
-vete a dormir.
+[03:14:00] target: observed  
+[03:14:00] entry: pending  
+[03:14:01] awaiting input...  
 
 ———
 
-El servicio reinició solo.
+Dave lleva cuatro noches sin dormir.  
 
-Una línea.
+No por el turno.  
 
-Un timestamp.
+Hay una taza limpia  
+que sigue dejando  
+del mismo lado del fregadero.  
 
-03:14.
+La lava.  
 
-En cualquier otro turno
-lo habría archivado como ruido.
+La seca.  
 
-Un cron.
+La vuelve a dejar ahí.  
 
-Un parche automático.
+Cada mañana  
+olvida por qué sigue haciéndolo.  
 
-Un reinicio pendiente.
+Los ojos le pican.  
 
-Lo sabe.
+El café ya no hace nada.  
 
-Lo ha visto cientos de veces.
+Lleva dos horas  
+releyendo la misma línea de log  
+sin que las palabras  
+decidan quedarse.  
 
-Pero esta noche
-el 03:14
-no parece un cron.
+no es nada.  
 
-Parece una pregunta.
+es el cansancio.  
 
-¿Y si ahora?
-
-¿Y si mientras dudas
-alguien ya está dentro?
-
-[SISTEMA — externo al host]
-
-[03:14:02] input: none
-[03:14:02] entry: still pending
-[03:14:03] operator state: degraded
-[03:14:03] waiting...
-
-Abre la lista de contactos.
-
-Busca a Luis.
-
-Ya no trabaja aquí.
-
-Busca a Sergio.
-
-Turno de descanso.
-
-Busca al gerente.
-
-
-Cierra el teléfono.
-
-No porque no exista ayuda.
-
-Porque pedirla
-tomaría más tiempo
-que decidir.
-
-Y decidir
-es exactamente
-lo que ya no siente
-que pueda hacer.
+vete a dormir.  
 
 ———
 
-El péndulo.
+El servicio reinició solo.  
 
-Hace una hora pensó:
+Una línea.  
 
-es el parche.
+Un timestamp.  
 
-déjalo.
+03:14.  
 
-Y lo dejó.
+En cualquier otro turno  
+lo habría archivado como ruido.  
 
-El descarte por cansancio
-fue el primer error.
+Un cron.  
 
-Aunque todavía
-no pueda demostrarlo.
+Un parche automático.  
 
-Ahora el péndulo volvió.
+Un reinicio pendiente.  
 
-Y del otro lado
+Lo sabe.  
 
-ya no queda centro.
+Lo ha visto cientos de veces.  
 
-Solo posibilidades.
+Pero esta noche  
+el 03:14  
+no parece un cron.  
 
-Cada una
-más peligrosa
-que la anterior.
+Parece una pregunta.  
 
-El procedimiento dice:
+¿Y si ahora?  
 
-imagen del disco.
+¿Y si mientras dudas  
+alguien ya está dentro?  
 
-preservar memoria.
+[SISTEMA — externo al host]  
 
-aislar sin apagar.
+[03:14:02] input: none  
+[03:14:02] entry: still pending  
+[03:14:03] operator state: degraded  
+[03:14:03] waiting...  
 
-segunda validación.
+Abre la lista de contactos.  
 
-No tocar nada
-hasta documentarlo.
+Busca a Luis.  
 
-Dave no necesita leerlo.
+Ya no trabaja aquí.  
 
-Lo conoce de memoria.
+Busca a Sergio.  
 
-El cursor permanece sobre
+Turno de descanso.  
 
-Restart
+Busca al gerente.  
 
-Treinta segundos.
+Cierra el teléfono.  
 
-Cuarenta.
+No porque no exista ayuda.  
 
-Cincuenta.
+Porque pedirla  
+tomaría más tiempo  
+que decidir.  
 
-El único sonido
-es el ventilador del rack.
+Y decidir  
+es exactamente  
+lo que ya no siente  
+que pueda hacer.  
 
-La mano le tiembla.
+———
 
-No sabe
-si está salvando evidencia
+El péndulo.  
 
-o perdiendo tiempo.
+Hace una hora pensó:  
 
-Pulsa Enter.
+es el parche.  
 
-La consola vuelve.
+déjalo.  
 
-No hay alertas.
+Y lo dejó.  
 
-No hay procesos extraños.
+El descarte por cansancio  
+fue el primer error.  
 
-No hay tráfico.
+Aunque todavía  
+no pueda demostrarlo.  
 
-Dave respira.
+Ahora el péndulo volvió.  
 
-Por primera vez
-en cuatro noches
+Y del otro lado  
 
-respira.
+ya no queda centro.  
 
-ya pasó.
+Solo posibilidades.  
 
-lo detuve.
+Cada una  
+más peligrosa  
+que la anterior.  
 
-[SISTEMA — externo al host]
+El procedimiento dice:  
 
-[03:14:44] target state: changed
-[03:14:44] evidence: unavailable
-[03:14:45] observation interrupted
+imagen del disco.  
 
-Tres días después
+preservar memoria.  
 
-con sueño,
+aislar sin apagar.  
 
-con el sofá
-empezando a sentirse normal,
+segunda validación.  
 
-Dave intenta reconstruir.
+No tocar nada  
+hasta documentarlo.  
 
-Cruza timestamps.
+Dave no necesita leerlo.  
 
-Recupera respaldos.
+Lo conoce de memoria.  
 
-Busca la imagen
-que nunca tomó.
+El cursor permanece sobre  
 
-Busca el volcado
-de memoria
-que nunca preservó.
+Restart  
 
-Y llega al hueco.
+Treinta segundos.  
 
-No es un archivo.
+Cuarenta.  
 
-No es un log.
+Cincuenta.  
 
-No es una carpeta vacía.
+El único sonido  
+es el ventilador del rack.  
 
-Es un lugar
+La mano le tiembla.  
 
-donde antes existía
+No sabe  
+si está salvando evidencia  
 
-la posibilidad
+o perdiendo tiempo.  
 
-de saber.
+Pulsa Enter.  
 
-El hueco
-no dice:
+La consola vuelve.  
 
-aquí hubo un ataque.
+No hay alertas.  
 
-Tampoco dice:
+No hay procesos extraños.  
 
-aquí no pasó nada.
+No hay tráfico.  
 
-Solo dice:
+Dave respira.  
 
-aquí había evidencia.
+Por primera vez  
+en cuatro noches  
 
-y desapareció.
+respira.  
 
-No puede confirmar.
+ya pasó.  
 
-No puede descartar.
+lo detuve.  
 
-No porque dejara
-de investigar.
+[SISTEMA — externo al host]  
 
-Porque investigó
-hasta llegar
+[03:14:44] target state: changed  
+[03:14:44] evidence: unavailable  
+[03:14:45] observation interrupted  
 
-al lugar exacto
+Tres días después  
 
-donde él mismo
+con sueño,  
 
-había destruido
+con el sofá  
+empezando a sentirse normal,  
 
-la única respuesta.
+Dave intenta reconstruir.  
 
-no sé si entró.
+Cruza timestamps.  
 
-no sé si iba a entrar.
+Recupera respaldos.  
 
-no sé si el 03:14
+Busca la imagen  
+que nunca tomó.  
 
-era un cron.
+Busca el volcado  
+de memoria  
+que nunca preservó.  
 
-o era yo.
+Y llega al hueco.  
 
-viendo un enemigo
+No es un archivo.  
 
-donde solo había
+No es un log.  
 
-un reloj.
+No es una carpeta vacía.  
 
-Tres semanas después.
+Es un lugar  
 
-Otro turno.
+donde antes existía  
 
-Otro servidor.
+la posibilidad  
 
-Otro log.
+de saber.  
 
-03:14.
+El hueco  
+no dice:  
 
-Dave deja el café.
+aquí hubo un ataque.  
 
-Mira el reloj.
+Tampoco dice:  
 
-Mira la pantalla.
+aquí no pasó nada.  
 
-No toca el teclado.
+Solo dice:  
 
-No durante mucho tiempo.
+aquí había evidencia.  
 
-[SISTEMA — externo al host]
+y desapareció.  
 
-input: pending
+No puede confirmar.  
 
-operator: waiting...
+No puede descartar.  
 
-Porque ahora
+No porque dejara  
+de investigar.  
 
-el miedo
+Porque investigó  
+hasta llegar  
 
-ya no es llegar tarde.
+al lugar exacto  
 
-Es volver a destruir
+donde él mismo  
 
-la única respuesta.
+había destruido  
 
-[SISTEMA — externo al host]
+la única respuesta.  
 
-[end of observation:
-not because we left]
+no sé si entró.  
 
-[end of observation:
-because there is nothing left to observe]
+no sé si iba a entrar.  
 
-[status: —]
-📁 NOTA DEL ARCHIVO
+no sé si el 03:14  
 
-Este incidente
-no tiene código asignado.
+era un cron.  
 
-No tiene
-familia de malware confirmada.
+o era yo.  
 
-No tiene IOC verificable.
+viendo un enemigo  
 
-No tiene atribución.
+donde solo había  
 
-Tampoco tiene descarte.
+un reloj.  
 
-La evidencia volátil
-fue sobrescrita
-por la respuesta.
+Tres semanas después.  
 
-La respuesta
-fue dictada
-por la fatiga.
+Otro turno.  
 
-Ningún procedimiento
-registró la fatiga
-como evidencia.
+Otro servidor.  
 
-Nadie preguntó
-por el estado del operador
-antes de entregarle el turno.
+Otro log.  
 
-El reporte final dice:
+03:14.  
 
-inconcluso.
+Dave deja el café.  
 
-Dave sabe
+Mira el reloj.  
 
-que inconcluso
+Mira la pantalla.  
 
-no es una palabra técnica.
+No toca el teclado.  
 
-Es la forma educada
-de decir
+No durante mucho tiempo.  
 
-ya no se puede saber.
+[SISTEMA — externo al host]  
 
-Y parte de eso
+input: pending  
 
-lo hiciste tú
+operator: waiting...  
 
-a las tres de la mañana
+Porque ahora  
 
-con los ojos ardiendo,
+el miedo  
 
-la mano temblando
+ya no es llegar tarde.  
 
-y una decisión
+Es volver a destruir  
 
-que nunca debió
+la única respuesta.  
 
-tomar una sola persona.
+[SISTEMA — externo al host]  
 
-[03:14:00] —
-[03:14:01] —
-[03:14:02] —
+[end of observation:  
+not because we left]  
+
+[end of observation:  
+because there is nothing left to observe]  
+
+[status: —]  
+
+📁 NOTA DEL ARCHIVO  
+
+Este incidente  
+no tiene código asignado.  
+
+No tiene  
+familia de malware confirmada.  
+
+No tiene IOC verificable.  
+
+No tiene atribución.  
+
+Tampoco tiene descarte.  
+
+La evidencia volátil  
+fue sobrescrita  
+por la respuesta.  
+
+La respuesta  
+fue dictada  
+por la fatiga.  
+
+Ningún procedimiento  
+registró la fatiga  
+como evidencia.  
+
+Nadie preguntó  
+por el estado del operador  
+antes de entregarle el turno.  
+
+El reporte final dice:  
+
+inconcluso.  
+
+Dave sabe  
+
+que inconcluso  
+
+no es una palabra técnica.  
+
+Es la forma educada  
+de decir  
+
+ya no se puede saber.  
+
+Y parte de eso  
+
+lo hiciste tú  
+
+a las tres de la mañana  
+
+con los ojos ardiendo,  
+
+la mano temblando  
+
+y una decisión  
+
+que nunca debió  
+
+tomar una sola persona.  
+
+[03:14:00] —  
+[03:14:01] —  
+[03:14:02] —  
